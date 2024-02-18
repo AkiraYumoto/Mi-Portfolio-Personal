@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JC Desarrollo web</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Seccion inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/JC/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+
+                        </ul>
+                    </nav>
+                    <!--ICONOS MENU RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://github.com/AkiraYumoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/d4rk.low/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/juancamilomonina/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span> Juan Camilo </span>Desarrollador Web</h2>
+                <p class="descripcion">
+                    Soy Juan Camilo Monina, un front-end developer de 19 años con más de 1 año de experiencia
+                    autodidacta.
+                    Mi enfoque profesional se centra en la
+                    creación
+                    de soluciones web responsivas y eficientes.
+                </p>
+                <a href="#portfolio">Ir a portfolio</a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Sobre mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span> Juan Camilo</span></h2>
+            <h3>Front-End Developer</h3>
+            <p>
+                Front-end developer apasionado con más de 1 año de experiencia autodidacta. Estudiante comprometido en
+                Desarrollo Web en
+                la UNLaM. En constante búsqueda de desafíos para expandir y aplicar mis habilidades en la creación de
+                experiencias
+                digitales cautivadoras.
+            </p>
+            <div class="boton-centrado">
+                <a href="CV Juan Camilo Monina.pdf" download="Curriculum Juan">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Services-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr />
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Potencia tu presencia online con un diseño web único que fusiona creatividad y funcionalidad.
+                    Destácate con
+                    gráficos cautivadores y optimización SEO para alcanzar el éxito digital.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo de Aplicaciones Web</h4>
+                <hr />
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React.js</li>
+                </ul>
+                <p>
+                    Mi enfoque en el desarrollo de aplicaciones web se basa en la
+                    creación de soluciones interactivas y eficientes.
+                    He trabajado con tecnologías como HTML, CSS, y JavaScript, además de
+                    frameworks como React para construir interfaces modernas y receptivas.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño Web Responsive</h4>
+                <hr />
+                <ul class="servicios-tag">
+                    <li>UX/UI</li>
+                    <li>Rendimiento</li>
+                    <li>SEO</li>
+                </ul>
+                <p>
+                    Especializado en crear experiencias web fluidas y adaptables. He implementado diseños elegantes y
+                    funcionales,
+                    priorizando la usabilidad y la velocidad de carga
+                    para una experiencia de usuario óptima.
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--Seccion skills-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de datos</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Metodologias Agiles</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="ma" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    <!--Seccion Portfolio/proyectos-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://cyberfictions.netlify.app/" target="_blank">
+                    <img src="img/cyberfictions.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+            </div>
+            </a>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://goblinpage.netlify.app/" target="_blank">
+                    <img src="img/goblin page.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+            </div>
+            </a>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://codepen.io/AkiraYumoto/full/ExopmQX" target="_blank">
+                    <img src="img/Original trombones.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+            </div>
+            </a>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://memorygamesx.netlify.app/" target="_blank">
+                    <img src="img/Memory game.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Memory Game</p>
+                    </div>
+            </div>
+            </a>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://codepen.io/AkiraYumoto/full/NWXBjrm" target="_blank">
+                    <img src="img/survey form.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Formulario</p>
+                    </div>
+            </div>
+            </a>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://codepen.io/AkiraYumoto/full/QWarBMQ" target="_blank">
+                    <img src="img/Tribute page.png" alt="" />
+                    <div class="info">
+                        <h4>Descripción del proyecto</h4>
+                        <p>Pagina tributo</p>
+                    </div>
+            </div>
+            </a>
+        </div>
+
+        </div>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame Ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/eldementexdxd@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" required>
+                    <input type="email" name="email" placeholder="Correo Electronico" class="input-mitad" required>
+                    <input type="hidden" name="_autoresponse"
+                        value="Gracias por tus comentarios, en la brevedad recibiras una respuesta.">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." name="Subject" class="input-full" required>
+                </div>
+                <div class="fila">
+                    <textarea name="Comments" placeholder="Mensaje..." class="input-full" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <input type="submit" class="btn-enviar" value="Enviar Mensaje">
+                <input type="hidden" name="_next" value="https://portfoliojuancito.netlify.app/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Juan C. Monina - 2023</p>
+        <div class="redes">
+            <a href="https://github.com/AkiraYumoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/d4rk.low/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/juancamilomonina/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
